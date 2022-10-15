@@ -16,4 +16,6 @@ O desafio seria para estruturar o site em HTML, mas aproveitei e utilizei um pou
 
 O Resultado foi muito satisfatório e consegui deixar o site no formato que idealizei.
 
-   
+<p align="center">
+  <img width="460" height="300" src="src/img/to_readme.gif" >
+ </p>
