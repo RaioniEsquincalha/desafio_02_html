@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  list-style: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color:#FFF;  
+  }
+
+.container {
+  display: flex;
+  background-color: aliceblue;
+  width: 1200px;
+  box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.49);
+  }
+
+/* MENU LATERAL */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+  background-color: azure;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.092);
+  z-index: 2;
+  }
+
+.logo {
+  background-image: url('/img/logo_medtech.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  width: 100%;
+  }
+
+.navegacao {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+
+.navegacao ul {
+  width: 100%;
+  margin: auto;
+  }
+
+.navegacao li {
+  margin: auto;
+  border-bottom: 1px solid #ebebeb;
+  cursor: pointer;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+  transition: .3s; 
+  }
+
+.navegacao li:hover{
+  transform: scale(1.1);
+  background-color: rgb(234, 251, 251);
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.209);
+  }
+
+
+.navegacao li a {
+  font-size: 1.3rem;
+  color: #252525;
+  width: 100%;
+  }
+
+/* CONTEÚDO */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  min-width: 80%;
+  }
+
+.header {
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+  z-index: 1;   
+  }
+
+.header img {
+  width: 960px;
+  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  min-height: 300px;
+  flex: 1;  
+  align-items: center;
+  }
+
+.content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 15px auto;
+  text-transform: uppercase;
+  text-decoration: underline; 
+  }
+
+.content p {
+  width: 700px;
+  font-size: 0.85rem;
+  margin-bottom: 60px;
+  text-align: center;
+  }
+
+.box-cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 30px;
+  }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebeaea;
+  border: 2px solid #369FCF;
+  border-radius: 15px;
+  width: 160px;
+  height: 300px;
+  padding: 10px;
+  transition: .5s;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+
+}
+.cards:hover img {
+  transform: rotate(15deg);
+}
+/* .cards img:hover {
+  transform: rotate(15deg);
+} */
+.img-card img{
+  width: 100px;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-bottom: 15px;
+  border: 2px solid #369FCF;
+  transition: .5s;
+}
+
+.card-body h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: .9rem;
+
+}
+
+.card-button button {
+  padding: 5px 10px;
+  width: 150px;
+  background-image: linear-gradient(to left, #196AAC, #369FCF );
+  color: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+  font-size: .9rem;
+  cursor: pointer;
+  transition: .3s;
+  margin-top: 20px;
+}
+
+.card-button button:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, #196AAC, #369FCF );
+}
+
+
+
+/* FOOTER */
+
+ .footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 50px;
+   background-color: azure;
+   border-top: 1px solid #8d8b8b;
+   min-height: 80px;
+   
+ }
+
+ .footer .title {
+   font-size: .9rem;
+   text-align: center;
+   margin-bottom: 10px;
+   color: #252525;
+ }
+
+ .icons img {
+   width: 25px;
+   margin-left: 15px;
+   transition: .2s;
+ }
+
+ .icons img:hover {
+   transform: scale(1.2);
+ }
+
+
+/* PAGINA DE CONTATO */
+
+ .content-contato{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  flex: 1;
+  align-items: center;
+ }
+
+ .content-contato .contacts {
+  margin: 20px auto;
+  text-align: center;
+
+ }
+ .content-contato .contacts h1 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 10px;
+ }
+
+ .content-contato .contacts {
+  font-size: 1.1rem;
+ }
+ .address {
+  display: flex;
+  display: row;
+  background-color: #f8f8f8;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-around;
+ }
+
+.address p {
+  border-left: 2px solid #252525;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #252525;
+}
+.address iframe {
+  width: 400px;
+  height: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.249);
+  border-radius: 5px;
+ }
+
+ .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+ }
+
+ .form h2 {
+  font-size: .9rem;
+  text-transform: uppercase;
+  margin: 10px auto;
+ }
+
+.box-inputs {
+  max-width: 400px;
+}
+
+
+.input-group label {
+  color: #3d3d3d;
+  font-size: .8rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 100%;
+  margin: 0 15px 10px 2px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #6b6a6a;
+
+}
+
+.input-group textarea {
+  height: 150px;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #6b6a6a;
+  resize: none;
+
+}
+
+.box-button {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.box-button input {
+  padding: 5px 10px;
+  width: 150px;
+  margin-left: 20px;
+  background-image: linear-gradient(to left, #196AAC, #369FCF );
+  color: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+  font-size: .9rem;
+  cursor: pointer;
+  transition: .3s;
+  margin-bottom: 20px;
+}
+
+.box-button input:hover{
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, #196AAC, #369FCF );
+}
+
+/* HORÁRIO DE ATENDIMENTO */
+
+.box-table {
+  width: 700px;
+
+}
+
+.box-table table{
+  min-width: 680px;
+  border: 2px solid #252525;
+  border-radius: 10px
+  
+}
+
+.box-table th{
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-color: #3d3d3d;
+  color: #ebeaea;
+}
+
+.box-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.tr-par {
+ background-color: #ebebeb;
+}
+
+/* SOBRE */
+
+.card-presentation {
+  display: flex;
+  width: 920px;
+  border: 2px solid #252525;
+  padding: 5px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.img-presentation{
+  background-image: url('/img/banner_apresentacao.jpg');
+  width: 50%;
+  border-radius: 20px 0 0 20px;
+}
+
+.text-presentation {
+  width: 50%;
+  padding: 10px;
+}
+
+.text-presentation h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: underline;
+  color: #252525;
+}
+
+.text-presentation p {
+  width: 100%;
+  height: 250px;
+}
